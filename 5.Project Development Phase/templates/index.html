@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Meteorological Input Matrix</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+</head>
+<body>
+    <div class="card">
+        <h2>📊 Weather Variable Metrics Entry</h2>
+        
+        {% if error_msg %}
+            <div class="error-message">⚠️ {{ error_msg }}</div>
+        {% endif %}
+        
+        <form action="/predict_action" method="POST">
+            <div class="form-group">
+                <label for="annual">Annual Rainfall (mm):</label>
+                <input type="number" step="any" id="annual" name="feature_annual" required>
+            </div>
+            <div class="form-group">
+                <label for="visibility">Cloud Visibility Index:</label>
+                <input type="number" step="any" id="visibility" name="feature_visibility" required>
+            </div>
+            <div class="form-group">
+                <label for="monsoon">Monsoon Rainfall (Jun-Sep) (mm):</label>
+                <input type="number" step="any" id="monsoon" name="feature_monsoon" required>
+            </div>
+            <div class="form-group">
+                <label for="humidity">Humidity Level (%):</label>
+                <input type="number" step="any" id="humidity" name="feature_humidity" required>
+            </div>
+            <div class="form-group">
+                <label for="temp">Temperature Metric (°C):</label>
+                <input type="number" step="any" id="temp" name="feature_temperature" required>
+            </div>
+            <button type="submit" class="btn">Submit Variables to Core Engine</button>
+        </form>
+    </div>
+</body>
+</html>
