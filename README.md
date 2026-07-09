@@ -44,8 +44,6 @@ Built with a Flask-powered web interface, the system enables users to input real
 
 The system follows a layered architecture pattern ensuring clean separation of concerns:
 
-![System Architecture](documentation/system_architecture.png)
-
 **Architecture Layers:**
 
 | Layer | Components | Responsibility |
@@ -62,8 +60,6 @@ The system follows a layered architecture pattern ensuring clean separation of c
 
 The ER diagram below illustrates the data model and relationships between system entities:
 
-![Entity Relationship Diagram](documentation/ER_Diagram.png)
-
 **Entities:**
 - **User** — Stores user information (`user_id` PK, `name`, `email`)
 - **Weather_Input** — Captures weather parameters (`input_id` PK, `user_id` FK, `rainfall`, `cloud_visibility`, `seasonal_rainfall`, `timestamp`)
@@ -78,8 +74,6 @@ The ER diagram below illustrates the data model and relationships between system
 ##  Project Flow
 
 The ML pipeline follows a structured, end-to-end workflow:
-
-![Project Flow](documentation/project_flow.png)
 
 ```
 📁 Dataset Collection
