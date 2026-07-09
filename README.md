@@ -1,279 +1,227 @@
-# Rising waters
-## 📌 Project Overview
+#  Flood Prediction System using Machine Learning
 
-Floods are among the most devastating natural disasters, causing significant loss of life, property damage, and displacement every year. Traditional flood forecasting methods often fail to provide timely and accurate predictions, limiting the ability of authorities to take preventive action.
+##  Project Overview
 
-This project develops a **Machine Learning-based Flood Prediction System** that analyzes historical weather data to predict the likelihood of flood occurrences. The system is trained using multiple supervised learning algorithms, and the best-performing model is integrated into a **Flask web application** for real-time flood risk prediction.
-
-The application is designed for future deployment on **IBM Cloud**, making it scalable and accessible from anywhere.
+The **Flood Prediction System** is a Machine Learning-based web application that predicts the likelihood of floods using historical weather data. The system applies the **XGBoost** algorithm to analyze weather parameters and generate accurate flood predictions through a simple and interactive Flask web interface.
 
 ---
 
-## 🎯 Objectives
+##  Features
 
-- Predict flood occurrence using historical weather data.
-- Compare the performance of multiple machine learning algorithms.
-- Deploy the best-performing model in a user-friendly Flask web application.
-- Assist disaster management teams in early flood warning and resource planning.
-
----
-
-## 🚀 Features
-
-- Predicts flood risk based on weather parameters.
-- Uses multiple machine learning algorithms for comparison.
-- Interactive web interface built with Flask.
-- High prediction accuracy using XGBoost.
-- Ready for IBM Cloud deployment.
-- Easy-to-use interface for authorities and disaster management teams.
+- Historical weather data analysis
+- Data preprocessing and feature scaling
+- Machine Learning model training
+- Flood prediction using the trained XGBoost model
+- Flask-based web application
+- User-friendly prediction interface
+- Performance testing using Apache JMeter
 
 ---
 
-## 🛠 Technologies Used
+##  Technologies Used
 
-### Programming Language
-- Python 3.8+
-
-### Machine Learning Libraries
-- NumPy
-- Pandas
+- Python
+- Flask
 - Scikit-learn
 - XGBoost
-- PyTorch
-
-### Data Visualization
+- Pandas
+- NumPy
 - Matplotlib
-
-### Web Development
-- Flask
 - HTML
 - CSS
-- JavaScript
-
-### Deployment
-- IBM Cloud
+- Apache JMeter
+- Jupyter Notebook
 
 ---
 
-## 🤖 Machine Learning Algorithms
+# Repository Structure
 
-The following algorithms were trained and evaluated:
-
-- Decision Tree Classifier
-- Random Forest Classifier
-- K-Nearest Neighbors (KNN)
-- XGBoost Classifier
-
-### Best Model
-
-✅ **XGBoost**
-
-**Accuracy:** **96.55%**
-
-The trained XGBoost model is saved and used by the Flask web application for flood prediction.
-
----
-
-## 📊 Dataset Features
-
-The model is trained using historical weather data containing features such as:
-
-- Annual Rainfall
-- Cloud Visibility
-- Seasonal Rainfall
-- Temperature
-- Humidity
-- Weather Patterns
-- Flood Occurrence (Target)
-
----
-
-## 💻 Project Workflow
-
-1. Data Collection
-2. Data Preprocessing
-3. Feature Selection
-4. Model Training
-5. Model Evaluation
-6. Best Model Selection
-7. Model Saving
-8. Flask Web Application
-9. IBM Cloud Deployment
-
----
-
-## 📂 Project Structure
-
-```
-Flood-Prediction/
+```text
+Rising-Waters/
 │
-├── dataset/
-│   └── flood_data.csv
+├── 1.Brainstorming & Ideation/
+│   ├── Brainstorming & Idea Prioritization.pdf
+│   ├── Define Problem Statements.pdf
+│   └── Empathy Map.pdf
 │
-├── models/
-│   └── xgboost_model.pkl
+├── 2.Requirement Analysis/
+│   ├── Customer Journey Map.pdf
+│   ├── Data Flow Diagram.pdf
+│   ├── Solution Requirements.pdf
+│   └── Technology Stack.pdf
 │
-├── static/
-│   ├── css/
-│   ├── js/
-│   └── images/
+├── 3.Project Design Phase/
+│   ├── Problem-Solution Fit.pdf
+│   ├── Proposed Solution.pdf
+│   └── Solution Architecture.pdf
 │
-├── templates/
-│   ├── index.html
-│   └── result.html
+├── 4.Project Planning Phase/
+│   └── Project Planning.pdf
+│
+├── 5.Project Development Phase/
+│   ├── Code Layout, Readability and Reusability.pdf
+│   ├── Coding & Solution.pdf
+│   └── No. of Functional Features Included.pdf
+│
+├── 6.Project Testing/
+│   └── Performance Testing.pdf
+│
+├── 7.Project Documentation/
+│   ├── Project Executable Files.pdf
+│   └── Sample Project Documentation.pdf
+│
+├── 8.Project Demonstration/
+│   ├── Communication.pdf
+│   ├── Demonstration of Proposed Features.pdf
+│   ├── Project Demo Planning.pdf
+│   ├── Scalability & Future Plan.pdf
+│   └── Team Involvement in Demonstration.pdf
 │
 ├── app.py
-├── train_model.py
-├── requirements.txt
 ├── README.md
-└── LICENSE
+├── requirements.txt
+├── dataset/
+├── documentation/
+├── models/
+├── notebooks/
+├── static/
+└── templates/
 ```
 
 ---
 
-## 📖 Use Cases
+# Folder Description
 
-### Scenario 1: Early Flood Warning
+### 1. Brainstorming & Ideation
+- Brainstorming & Idea Prioritization
+- Problem Definition
+- Empathy Map
 
-A meteorologist enters rainfall and cloud visibility data for a flood-prone district. The model predicts a high flood probability, enabling authorities to issue evacuation alerts in advance.
+### 2. Requirement Analysis
+- Customer Journey Map
+- Data Flow Diagram (DFD)
+- Functional & Non-Functional Requirements
+- Technology Stack
+
+### 3. Project Design Phase
+- Problem-Solution Fit
+- Proposed Solution
+- Solution Architecture
+
+### 4. Project Planning Phase
+- Project Planning and Scheduling
+
+### 5. Project Development Phase
+- Source Code Implementation
+- Code Quality & Readability
+- Functional Features
+- Machine Learning Model Development
+
+### 6. Project Testing
+- Performance Testing using Apache JMeter
+
+### 7. Project Documentation
+- Project Executable Files
+- Project Documentation
+
+### 8. Project Demonstration
+- Communication Strategy
+- Demonstration of Proposed Features
+- Project Demo Planning
+- Scalability & Future Plan
+- Team Involvement
 
 ---
 
-### Scenario 2: Disaster Response
+#  How to Run
 
-Disaster management officials monitor multiple regions during monsoon season. The system instantly classifies flood risk levels, helping prioritize rescue teams and relief resources.
+## Prerequisites
 
----
-
-### Scenario 3: Model Validation
-
-Government analysts evaluate the trained model using historical flood data. The XGBoost classifier achieves **96.55% accuracy**, demonstrating reliable performance.
+- Python 3.10 or above
+- pip
 
 ---
 
-## ⚙ Hardware Requirements
-
-- Intel Core i3 Processor or above
-- Minimum 4 GB RAM
-- Minimum 2 GB Free Storage
-- Internet Connection
-
----
-
-## 💾 Software Requirements
-
-- Windows / Linux / macOS
-- Python 3.8+
-- Anaconda Navigator or Jupyter Notebook
-- Flask Framework
-- HTML
-- CSS
-- JavaScript
-- IBM Cloud Account
-
----
-
-## 📥 Installation
-
-### Clone the Repository
+## Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/flood-prediction.git
+git clone https://github.com/KSriMounika/Rising-Waters.git
 ```
 
-### Navigate to the Project Folder
+---
+
+## Navigate to the Project Folder
 
 ```bash
-cd flood-prediction
+cd Rising-Waters
 ```
 
-### Install Dependencies
+---
+
+## Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### Run the Flask Application
+---
+
+## Run the Application
 
 ```bash
 python app.py
 ```
 
-Open your browser and visit:
+---
+
+## Open in Browser
 
 ```
-http://127.0.0.1:5000/
+http://127.0.0.1:5000
 ```
 
 ---
 
-## 📈 Model Performance
+# Machine Learning Models Used
 
-| Algorithm | Accuracy |
-|-----------|----------|
-| Decision Tree | Evaluated |
-| Random Forest | Evaluated |
-| K-Nearest Neighbors | Evaluated |
-| **XGBoost** | **96.55%** |
-
----
-
-## 👥 Team Members
-
-| Name | Role |
-|------|------|
-| Vutukuri Naga Sravani | Team Lead |
-| Ramya Golleru | Member |
-| Jaldula Neeraja | Member |
-| Doma Charan Teja | Member |
-| Kuuchimanchi Aditya Sai Vamsi Krishna | Member |
-
----
-
-## 🧑‍💻 Skills Required
-
-- Machine Learning
-- Supervised Learning
-- Decision Trees
+- Decision Tree
 - Random Forest
 - K-Nearest Neighbors (KNN)
-- XGBoost
-- NumPy
-- Matplotlib
-- Scikit-learn
-- PyTorch
-- Flask
-- HTML
-- CSS
-- JavaScript
+- **XGBoost (Final Selected Model)**
 
 ---
 
-## ☁ Future Enhancements
+# Testing
 
-- Real-time weather API integration
-- Live flood alerts
-- GIS-based flood visualization
-- SMS and Email notifications
-- Mobile application support
-- IoT sensor integration
+- Functional Testing
+- Performance Testing using Apache JMeter
+- Prediction Validation
+- Flood Risk & No Flood Risk Verification
 
 ---
 
-## 📜 License
+# Performance Testing
 
-This project is developed for educational and research purposes.
+The application was tested using **Apache JMeter** to evaluate response time, throughput, and error rate.
 
----
+### Test Summary
 
-## 🙏 Acknowledgements
-
-- IBM SkillsBuild
-- Scikit-learn
-- XGBoost
-- Flask
-- Python Community
+- Testing Tool: Apache JMeter
+- Average Response Time: **17 ms**
+- Maximum Response Time: **59 ms**
+- Throughput: **11.2 Requests/sec**
+- Error Rate: **0.00%**
 
 ---
 
-**Developed by Team –Rising waters**
+# Future Enhancements
+
+- Cloud Deployment
+- Live Weather API Integration
+- User Authentication
+- Mobile Application
+- Advanced Analytics Dashboard
+
+## Live Demo
+
+https://rising-waters-hh79.onrender.com/
