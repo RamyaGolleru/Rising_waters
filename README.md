@@ -191,7 +191,7 @@ http://127.0.0.1:5000/
 ## Home Page
 
 ```
-/
+/http://127.0.0.1:5000/
 ```
 
 Displays project introduction.
